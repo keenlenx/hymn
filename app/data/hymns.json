@@ -1,0 +1,431 @@
+[
+    {
+      "id": "1",
+      "title": "Herra, kiitos",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Herra, kiitos, Herra kiitos,",
+            "Sä olet suuri, meitä rakastat.",
+            "Kiitos, kiitos, Herra kiitos,",
+            "Olet armollinen meille."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Herra, kiitos, Herra kiitos,",
+            "Sä olet suuri, meitä rakastat.",
+            "Kiitos, kiitos, Herra kiitos,",
+            "Olet armollinen meille."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Ihmeellinen rakkaus",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Ihmeellinen rakkaus, suuri Jumalan armo,",
+            "Löydän tieni Jeesuksessa, hän on mun pelastaja."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Ihmeellinen rakkaus, suuri Jumalan armo,",
+            "Löydän tieni Jeesuksessa, hän on mun pelastaja."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Oi Jeesus, kuinka rakas",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Oi Jeesus, kuinka rakas,",
+            "On tää maailmas kaikista kaunein.",
+            "Sinun rakkautesi on syvä,",
+            "On kuin tähti, ei sammu ikinä."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Oi Jeesus, kuinka rakas,",
+            "On tää maailmas kaikista kaunein.",
+            "Sinun rakkautesi on syvä,",
+            "On kuin tähti, ei sammu ikinä."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Kaikki on kaunista",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Kaikki on kaunista, luomakunnan ihmeitä,",
+            "Kiitos Luoja, kiitos sinulle."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Kaikki on kaunista, luomakunnan ihmeitä,",
+            "Kiitos Luoja, kiitos sinulle."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Kiitos, Jeesus, et kulje pois",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Kiitos, Jeesus, et kulje pois,",
+            "Mua johdatat aina luokses taas."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Kiitos, Jeesus, et kulje pois,",
+            "Mua johdatat aina luokses taas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Herra, Sua kiitämme",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Herra, Sua kiitämme,",
+            "Kiitos taivaan Isä,",
+            "Kaikesta armosta."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Herra, Sua kiitämme,",
+            "Kiitos taivaan Isä,",
+            "Kaikesta armosta."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Suuri on meidän Jumalamme",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Suuri on meidän Jumalamme,",
+            "Kaikki luotu on hänen käsissään.",
+            "Kiitos, kiitos Herra meille,",
+            "Sä olet suuri, Herra Jumala."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Suuri on meidän Jumalamme,",
+            "Kaikki luotu on hänen käsissään.",
+            "Kiitos, kiitos Herra meille,",
+            "Sä olet suuri, Herra Jumala."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Jumala on rakkaus",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Jumala on rakkaus, joka suojelee meitä,",
+            "Hän on turvamme, hän on vapahtajamme."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Jumala on rakkaus, joka suojelee meitä,",
+            "Hän on turvamme, hän on vapahtajamme."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Vapahtaja on tullut",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Vapahtaja on tullut,",
+            "Valo meille loistaa.",
+            "Kaikki kansat ylistää,",
+            "Jumalan armoa."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Vapahtaja on tullut,",
+            "Valo meille loistaa.",
+            "Kaikki kansat ylistää,",
+            "Jumalan armoa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Kun Herra oli minulle",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Kun Herra oli minulle,",
+            "Rakkauden täytti minut.",
+            "Oli valo elämässäni,",
+            "Ja autuus tuli sydämeeni."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Kun Herra oli minulle,",
+            "Rakkauden täytti minut.",
+            "Oli valo elämässäni,",
+            "Ja autuus tuli sydämeeni."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Halleluja, kiitos Herralle",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Halleluja, kiitos Herralle,",
+            "Me kiitämme, me palvomme.",
+            "Päivä on tullut ja ilta on kirkastunut.",
+            "Meitä kiittää Herra Jumala."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Halleluja, kiitos Herralle,",
+            "Me kiitämme, me palvomme."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Jeesus on mun valoni",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Jeesus on mun valoni,",
+            "Hän johdattaa elämässäni.",
+            "Hänen rakkaus valaisee tietäni."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Jeesus on mun valoni,",
+            "Hän johdattaa elämässäni."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "O, tule Jeesus",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "O, tule Jeesus, auta meitä,",
+            "Hänessä on pelastus meille.",
+            "Rakkautesi täyttää meidät.",
+            "O, tule Jeesus, auta meitä."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "O, tule Jeesus, auta meitä,",
+            "Hänessä on pelastus meille."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Rakkaus voittaa",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Rakkaus voittaa, aina voittaa,",
+            "Se kestää kaiken myrskyn.",
+            "Jeesus, voimaa, rakkautta, valoa."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Rakkaus voittaa, aina voittaa,",
+            "Se kestää kaiken myrskyn."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Kunnia Herralle",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Kunnia Herralle, ylistys Jumalalle,",
+            "Me kiitämme, me palvomme Häntä."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Kunnia Herralle, ylistys Jumalalle,",
+            "Me kiitämme, me palvomme Häntä."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Rukoilemme Herraa",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Rukoilemme Herraa, meidän Jumalamme,",
+            "Hän kuulee rukouksemme ja vastaa meille."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Rukoilemme Herraa, meidän Jumalamme,",
+            "Hän kuulee rukouksemme ja vastaa meille."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Je, Jeesus on Herra",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Je, Jeesus on Herra, Hänessä turvamme,",
+            "Hänessä on elämä ja voima meille."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Je, Jeesus on Herra, Hänessä turvamme,",
+            "Hänessä on elämä ja voima meille."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Aamunkoitto",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Aamunkoitto loistaa, taivas on kirkas,",
+            "Kiitos, Herra, että sä meidät rakastat."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Aamunkoitto loistaa, taivas on kirkas,",
+            "Kiitos, Herra, että sä meidät rakastat."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Kiitos Jumalalle",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Kiitos Jumalalle, hän on meidän turvamme,",
+            "Hänen rakkautensa ei koskaan petä meitä."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Kiitos Jumalalle, hän on meidän turvamme,",
+            "Hänen rakkautensa ei koskaan petä meitä."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Vapahtajan kirkastus",
+      "lyrics": [
+        {
+          "type": "stanza",
+          "text": [
+            "Vapahtajan kirkastus, suuren ihmeen valo,",
+            "Se valaisee sydämemme, me ylistämme Häntä."
+          ]
+        },
+        {
+          "type": "chorus",
+          "text": [
+            "Vapahtajan kirkastus, suuren ihmeen valo,",
+            "Se valaisee sydämemme, me ylistämme Häntä."
+          ]
+        }
+      ]
+    }
+  ]
+  

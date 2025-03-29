@@ -1,74 +1,123 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { FlatList, TouchableOpacity, Text, View, TextInput, StyleSheet, StatusBar } from 'react-native';
+import { useRouter } from 'expo-router';
+import hymnData from '../data/hymns.json'; // Make sure hymnData is typed correctly
+import { Hymn } from '../types'; // Import Hymn type
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+export default function HymnList(): React.JSX.Element {
+  const router = useRouter();
+  const [hymns, setHymns] = useState<Hymn[]>(hymnData); // Explicitly type hymnData as Hymn[]
+  const [searchQuery, setSearchQuery] = useState<string>(''); // State for search query
 
-export default function HomeScreen() {
+  useEffect(() => {
+    const lowerQuery = searchQuery.toLowerCase();
+
+    // Filter hymns based on search query
+    const filteredHymns: Hymn[] = hymnData.filter((hymn) => {
+      const idMatch = hymn.id.includes(searchQuery); // Match hymn id
+      const titleMatch = hymn.title.toLowerCase().includes(lowerQuery); // Match title
+      const lyricsMatch = hymn.lyrics.some((line) =>
+        line.text.some((lyric) => lyric.toLowerCase().includes(lowerQuery)) // Match lyrics (each line in text)
+      );
+
+      return idMatch || titleMatch || lyricsMatch; // If any of the conditions match
+    });
+
+    // Update the hymns state with the filtered hymns
+    setHymns(filteredHymns);
+  }, [searchQuery]);
+
+  // Render each hymn item
+  const renderItem = ({ item }: { item: Hymn }) => (
+    <TouchableOpacity
+      style={styles.itemContainer}
+      onPress={() => router.push(`../hymn/${item.id}`)}
+    >
+      <Text style={styles.itemSubtitle}>{item.id}</Text>
+      <Text style={styles.itemTitle}>{item.title}</Text>
+    </TouchableOpacity>
+  );
+
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
+    <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="light-content" backgroundColor="#007bff" />
+      <View style={styles.navbar}>
+        <Text style={styles.navbarTitle}>SDA Hymnal</Text>
+      </View>
+      <View style={styles.searchContainer}>
+        <TextInput
+          style={styles.searchInput}
+          placeholder="Search hymns by number, title, or lyrics..."
+          value={searchQuery}
+          onChangeText={setSearchQuery}
         />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12'
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+      </View>
+      <FlatList
+        data={hymns}
+        keyExtractor={(item) => item.id}
+        renderItem={renderItem}
+        contentContainerStyle={{ paddingBottom: 16 }}
+        ListEmptyComponent={
+          <View style={styles.emptyContainer}>
+            <Text style={styles.emptyText}>No hymns found.</Text>
+          </View>
+        }
+      />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+  navbar: {
+    backgroundColor: '#007bff',
+    paddingVertical: 16,
+    paddingHorizontal: 12,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    justifyContent: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#0056b3',
   },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
+  navbarTitle: {
+    fontSize: 20,
+    fontWeight: '700',
+    color: '#fff',
   },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+  searchContainer: {
+    padding: 16,
+    backgroundColor: '#f8f9fa',
+  },
+  searchInput: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 8,
+    padding: 8,
+  },
+  itemContainer: {
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#ccc',
+    paddingHorizontal: 16,
+  },
+  itemTitle: {
+    fontSize: 18,
+    fontWeight: '600',
+  },
+  itemSubtitle: {
+    fontSize: 14,
+    color: '#555',
+  },
+  emptyContainer: {
+    padding: 16,
+    alignItems: 'center',
+  },
+  emptyText: {
+    fontSize: 18,
+    color: '#999',
   },
 });
